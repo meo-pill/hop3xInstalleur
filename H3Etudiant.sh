@@ -162,6 +162,7 @@ check_gem() {
 # Vérifier si le programme Hop3xEtudiant est installé
 check_hop3x() {
 
+    # fonction pour installer hop3x sans écraser le script
     install_hop3x() {
         echo -e "${GREEN}Installation de Hop3xEtudiant...${NC}"
         wget https://hop3x.univ-lemans.fr/Hop3xEtudiant.zip
@@ -200,4 +201,4 @@ check_gem
 check_hop3x
 
 # Lancer l'application
-java -Xmx2048m -jar hop3xEtudiant/lib/Hop3xEtudiant.jar
+java -Xmx4096m -jar hop3xEtudiant/lib/Hop3xEtudiant.jar
